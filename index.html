@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Curso Básico de Backbone.js</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<style>
+		body {
+			font-family: 'Open Sans', Arial;
+		}
+	</style>
+</head>
+<body id="app">
+
+	<div class="libros">
+		<h1>Libros</h1>
+		
+	</div>
+
+	<script type="text/template" id="tplMostrarLibro">
+		<h2><%= titulo %></h2>
+		<p><%= autor %></p>
+		<small><%= categoria %></small>
+		<hr>
+	</script>
+
+	<script src="js/vendor/jquery-1.12.0.min.js"></script>
+	<script src="js/vendor/underscore-min.js"></script>
+	<script src="js/vendor/backbone-min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<!-- App Backbone.js -->
+	<script src="js/backbone/models/libro.js"></script>
+	<script src="js/backbone/collections/libros.js"></script>
+	<script src="js/backbone/views/libreria.js"></script>
+</body>
+</html>
